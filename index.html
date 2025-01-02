@@ -7,214 +7,235 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Benef & Learn - Wedding Invitation</title>
-    <style>
-        @media (min-width: 500px) {
-            .custom-container {
-                width: 500px;
-                background-color: red;
-                margin: auto;
-            }
-        }
-
-        @media (max-width: 499px) {
-            .custom-container {
-                width: 100%;
-            }
-        }
-
-        .circle {
-            width: 20px;
-            height: 20px;
-            background-color: aqua;
-            margin: 15px 0;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofia&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
-    <div class="custom-container">
+<body class="bg-warning-subtle">
+    <div class="custom-container poppins-regular">
         <!-- navbar  -->
-        <nav class="position-fixed  d-flex flex-column">
-            <a href="#home">
-                <div class="rounded-circle circle"></div>
-            </a>
-            <a href="#quotes">
-                <div class="rounded-circle circle"></div>
-            </a>
-            <a href="#countdown">
-                <div class="rounded-circle circle"></div>
-            </a>
-            <a href="#schedule">
-                <div class="rounded-circle circle"></div>
-            </a>
-            <a href="#comments">
-                <div class="rounded-circle circle"></div>
-            </a>
-            <a href="#thanks">
-                <div class="rounded-circle circle"></div>
-            </a>
+        <nav class="position-fixed d-flex flex-column custom-position">
+            <a class="rounded-circle circle" href="#home"></a>
+            <a class="rounded-circle circle" href="#quotes"></a>
+            <a class="rounded-circle circle" href="#countdown"></a>
+            <a class="rounded-circle circle" href="#schedule"></a>
+            <a class="rounded-circle circle" href="#comments"></a>
+            <a class="rounded-circle circle" href="#thanks"></a>
         </nav>
         <!-- header  -->
         <header id="home" class="vh-100 d-flex flex-column align-items-center justify-content-center text-center">
-            <p class="caption fs-5">The Wedding of</p>
-            <div class="m-5">
-                <h1 class="fs-1">Benef</h1>
-                <h1 class="fs-1">&</h1>
-                <h1 class="fs-1">Learn</h1>
+            <p class="caption fs-5" data-aos="fade-down" data-aos-duration="1000">The Wedding of</p>
+            <div class="m-5 lobster-two-bold text-brown" data-aos="fade-up" data-aos-duration="1200">
+                <h1 class="fs-1" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">Benef</h1>
+                <h1 class="fs-1" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">&</h1>
+                <h1 class="fs-1" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="500">Learn</h1>
             </div>
-            <p class="fs-4">28.12.2024</p>
-            <p class="fs-5">Mengundang dengan hormat<br>Bapak/Ibu/Saudara/i pada pernikahan<br>putra/putri kami</p>
-            <a href="#quotes" class="btn btn-primary mt-5">Buka Undangan</a>
+            <p class="fs-4" data-aos="fade-up" data-aos-duration="1000">28.12.2024</p>
+            <p class="fs-5 text-secondary" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                Mengundang dengan hormat<br>Bapak/Ibu/Saudara/i pada pernikahan<br>putra/putri kami
+            </p>
+            <a id="welcome-btn" href="#quotes" class="btn btn-outline-dark mt-5" data-aos="flip-up"
+                data-aos-duration="1200">Buka Undangan</a>
         </header>
         <!-- mute button  -->
-        <button class="position-fixed bottom-0">
-            <!-- nanti diganti dengan simbol mute  -->
-            Mute
+        <button class="position-fixed btn btn-light fs-5 mute-bottom">
+            🔈
         </button>
-        <!-- quotes  -->
-        <section id="quotes" class="vh-100 d-flex flex-column justify-content-center">
-            <div class="p-5 text-center fs-5">
-                "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu
-                sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih
-                dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum
-                yang berpikir."
-            </div>
-        </section>
-        <!-- mempelai & coundown  -->
-        <section id="countdown" class="d-flex justify-content-center flex-column align-items-center vh-100">
-            <div class="text-center p-5">
-                <p>Ya Allah, perkenankanlah kami menikahkan putra-putri kami untuk mengikuti sunnah Rasul-Mu dalam
-                    membentuk keluarga yang sakinah, mawadah, warahmah. Memberi keturunan yang sholeh/sholehah dan taat
-                    kepada Allah SWT, serta berbakti kepada kedua orang tua.</p>
-            </div>
-            <div class="bg-white w-100 px-5 position-relative">
-                <div class="row py-4">
-                    <img class="rounded-circle col-4" src="assets/images/muslimat.avif" width="100" alt="bride-photo">
-                    <div class="col-8">
-                        <h2>Benef Woman</h2>
-                        <p>Putri dari Bapak Budi &<br>Ibu Susi</p>
+        <div id="all-sections">
+            <!-- quotes  -->
+            <section id="quotes" class="vh-100 d-flex flex-column justify-content-center">
+                <div class="p-5 text-center fs-5 text-secondary" data-aos="fade-in" data-aos-duration="1500"
+                    data-aos-delay="300">
+                    "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari
+                    jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu
+                    rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran
+                    Allah) bagi kaum yang berpikir."
+                </div>
+            </section>
+            <!-- mempelai & coundown  -->
+            <section id="countdown" class="d-flex justify-content-center flex-column align-items-center vh-100">
+                <div class="text-center p-5" data-aos="fade-down" data-aos-duration="1200">
+                    <p class="text-secondary">
+                        Ya Allah, perkenankanlah kami menikahkan putra-putri kami untuk mengikuti sunnah Rasul-Mu dalam
+                        membentuk keluarga yang sakinah, mawadah, warahmah. Memberi keturunan yang sholeh/sholehah dan
+                        taat
+                        kepada Allah SWT, serta berbakti kepada kedua orang tua.
+                    </p>
+                </div>
+                <div class="bg-white w-100 px-4 position-relative" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="row py-4" data-aos="fade-down" data-aos-duration="1000">
+                        <img class="rounded-circle col-4" src="assets/images/muslimat.avif" width="100"
+                            alt="bride-photo">
+                        <div class="col-8">
+                            <h2 class="lobster-two-bold text-brown">Benef Woman</h2>
+                            <p class="text-secondary">Putri dari Bapak Budi &<br>Ibu Susi</p>
+                        </div>
+                    </div>
+                    <div class="row py-4" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="col-8 text-end">
+                            <h2 class="lobster-two-bold text-brown">Learn Man</h2>
+                            <p class="text-secondary">Putri dari Bapak Budi &<br>Ibu Susi</p>
+                        </div>
+                        <img class="col-4 rounded-circle" src="assets/images/muslim.png" width="100" alt="groom-photo">
+                    </div>
+                    <h1 class="position-absolute start-50 amp-custom-position lobster-two-bold" data-aos="zoom-in"
+                        data-aos-duration="1200">&</h1>
+                </div>
+                <div class="p-5" data-aos="zoom-in-up" data-aos-duration="1500">
+                    <h1 class="mb-4">Menuju Akad Nikah</h1>
+                    <div class="d-flex gap-2 justify-content-between">
+                        <div class="text-center flex-grow-1" data-aos="flip-left" data-aos-duration="1000">
+                            <p id="days" class="py-2 w-100 mb-1 rounded bg-white text-center fs-4 shadow">02</p>
+                            <p>HARI</p>
+                        </div>
+                        <div class="text-center flex-grow-1" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+                            <p id="hours" class="py-2 w-100 mb-1 rounded bg-white text-center fs-4 shadow">20</p>
+                            <p>JAM</p>
+                        </div>
+                        <div class="text-center flex-grow-1" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+                            <p id="minutes" class="py-2 w-100 mb-1 rounded bg-white text-center fs-4 shadow">32</p>
+                            <p>MENIT</p>
+                        </div>
+                        <div class="text-center flex-grow-1" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
+                            <p id="seconds" class="py-2 w-100 mb-1 rounded bg-white text-center fs-4 shadow">45</p>
+                            <p>DETIK</p>
+                        </div>
                     </div>
                 </div>
-                <div class="row -py-4">
-                    <div class="col-8 text-end">
-                        <h2>Learn Man</h2>
-                        <p>Putri dari Bapak Budi &<br>Ibu Susi</p>
-                    </div>
-                    <img class="col-4 rounded-circle" src="assets/images/muslim.png" width="100" alt="groom-photo">
+            </section>
+            <!-- schedule  -->
+            <section id="schedule"
+                class="d-flex flex-column justify-content-center align-items-center vh-100 text-center">
+                <div class="px-5 mb-5">
+                    <h2 class="sofia-regular text-brown" data-aos="fade-down" data-aos-duration="1000">Akad Nikah</h2>
+                    <p class="text-secondary" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        Sabtu, xx Januari 2025 <br>
+                        Pukul 08.00 - Selesai <br>
+                        Kediaman Mempelai Wanita Jl. xxx no.xx <br>
+                        Kota Bandung, Jawa Barat
+                    </p>
                 </div>
-                <h1 class="position-absolute top-50 start-50">&</h1>
-            </div>
-            <div class="p-5">
-                <h1 class="mb-4">Menuju Akad Nikah</h1>
-                <div class="d-flex justify-content-between">
-                    <div>
-                        <p class="py-2 px-3 mb-1 rounded bg-white text-center fs-4">02</p>
-                        <p>HARI</p>
+                <div class="px-5 mb-5">
+                    <h2 class="sofia-regular text-brown" data-aos="fade-down" data-aos-duration="1000">Resepsi</h2>
+                    <p class="text-secondary" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        Sabtu, xx Januari 2025 <br>
+                        Pukul 08.00 - Selesai <br>
+                        Kediaman Mempelai Wanita Jl. xxx no.xx <br>
+                        Kota Bandung, Jawa Barat
+                    </p>
+                </div>
+                <div class="action-btn">
+                    <!-- Lihat Map Button -->
+                    <a href="https://maps.app.goo.gl/bgTzKE7inKoVoq816" target="_blank">
+                        <button class="btn btn-outline-dark" data-aos="zoom-in" data-aos-duration="800"
+                            data-aos-delay="300">
+                            Lihat Map
+                        </button>
+                    </a>
+
+                    <!-- Tambah ke Kalender Button -->
+                    <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Akad+Nikah&dates=20250125T080000Z/20250101T100000Z&details=Sabtu,+25+Januari+2025,+Pukul+08.00+-+10.00,+Kediaman+Mempelai+Wanita,+Jl.+xxx+no.xx,+Kota+Bandung,+Jawa+Barat,+https://maps.app.goo.gl/bgTzKE7inKoVoq816"
+                        target="_blank">
+                        <button class="btn btn-outline-dark" data-aos="zoom-in" data-aos-duration="800"
+                            data-aos-delay="500">
+                            Tambah ke Kalender
+                        </button>
+                    </a>
+                </div>
+            </section>
+
+            <!-- comments  -->
+            <section id="comments" class="vh-100 d-flex flex-column justify-content-start">
+                <form class="p-5 bg-success-subtle">
+                    <label for="name" class="form-label">Nama</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Nama lengkap" required>
+                    <label for="comment" class="form-label mt-2">Ucapan</label>
+                    <textarea class="form-control" name="comment" id="comment" placeholder="Pesan dan doa"
+                        required></textarea>
+                    <label for="confirm" class="form-label mt-3">Konfirmasi Kehadiran</label>
+                    <select name="confirmation" id="confirm" class="form-control" required>
+                        <option value="Hadir">Hadir</option>
+                        <option value="Tidak Hadir">Tidak Hadir</option>
+                        <option value="Mungkin">Mungkin</option>
+                    </select>
+                    <label for="total" class="form-label mt-3">Jumlah Hadir</label>
+                    <div class="d-flex">
+                        <div class="col">
+                            <input type="number" id="total" name="total" class="form-control"
+                                placeholder="Perkiraan Jumlah Hadir">
+                        </div>
+                        <button class="col btn btn-outline-dark ms-2 p-0">Kirim</button>
                     </div>
-                    <div>
-                        <p class="py-2 px-3 mb-1 rounded bg-white text-center fs-4">20</p>
-                        <p>JAM</p>
+                </form>
+                <h2 class="text-center mt-3 sofia-regular text-brown" data-aos="fade-down" data-aos-duration="1000">
+                    Ucapan dan Doa
+                </h2>
+                <div id="messages" class="px-5 pt-3 overflow-auto">
+                    <div class="w-100 bg-white p-3 rounded mb-2" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="200">
+                        <div class="d-flex justify-content-between">
+                            <h6>Nama</h6>
+                            <h6>Hadir</h6>
+                        </div>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
+                            quae necessitatibus.</p>
                     </div>
-                    <div>
-                        <p class="py-2 px-3 mb-1 rounded bg-white text-center fs-4">32</p>
-                        <p>MENIT</p>
+                    <div class="w-100 bg-white p-3 rounded mb-2" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="400">
+                        <div class="d-flex justify-content-between">
+                            <h6>Nama</h6>
+                            <h6>Hadir</h6>
+                        </div>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
+                            quae necessitatibus.</p>
                     </div>
-                    <div>
-                        <p class="py-2 px-3 mb-1 rounded bg-white text-center fs-4">45</p>
-                        <p>DETIK</p>
+                    <div class="w-100 bg-white p-3 rounded mb-2" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="600">
+                        <div class="d-flex justify-content-between">
+                            <h6>Nama</h6>
+                            <h6>Hadir</h6>
+                        </div>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
+                            quae necessitatibus.</p>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- schedule  -->
-        <section id="schedule" class="d-flex flex-column justify-content-center align-items-center vh-100 text-center">
-            <div class="px-5 mb-5">
-                <h2>Akad Nikah</h2>
-                <p>
-                    Sabtu, xx Januari 2025 <br>
-                    Pukul 08.00 - Selesai <br>
-                    Kediaman Mempelai Wanita Jl. xxx no.xx <br>
-                    Kota Bandung, Jawa Barat
-                </p>
-            </div>
-            <div class="px-5 mb-5">
-                <h2>Resepsi</h2>
-                <p>
-                    Sabtu, xx Januari 2025 <br>
-                    Pukul 08.00 - Selesai <br>
-                    Kediaman Mempelai Wanita Jl. xxx no.xx <br>
-                    Kota Bandung, Jawa Barat
-                </p>
-            </div>
-            <div class="action-btn">
-                <button class="btn btn-primary">Lihat Map</button>
-                <button class="btn btn-primary">Tambah ke Kalender</button>
-            </div>
-        </section>
-        <!-- comments  -->
-        <section id="comments" class="vh-100 d-flex flex-column justify-content-start">
-            <form class="p-5 bg-secondary">
-                <label for="name" class="form-label">Nama</label>
-                <input type="text" id="name" name="name" class="form-control" placeholder="Nama lengkap" required>
-                <label for="comment" class="form-label mt-2">Ucapan</label>
-                <textarea class="form-control" name="comment" id="comment" placeholder="Pesan dan doa"
-                    required></textarea>
-                <label for="confirm" class="form-label mt-3">Konfirmasi Kehadiran</label>
-                <select name="confirm" id="confirm" class="form-control" required>
-                    <option value="Hadir">Hadir</option>
-                    <option value="Tidak Hadir">Tidak Hadir</option>
-                    <option value="Mungkin">Mungkin</option>
-                </select>
-                <label for="total" class="form-label mt-3">Jumlah Hadir</label>
-                <div class="row">
-                    <div class="col">
-                        <input type="number" id="total" name="total" class="form-control"
-                            placeholder="Perkiraan Jumlah Hadir">
-                    </div>
-                    <button class="col btn btn-primary">Kirim</button>
-                    
+            </section>
+            <!-- thanks  -->
+            <section id="thanks"
+                class="d-flex justify-content-center flex-column align-items-center text-center vh-100 p-5">
+                <div>
+                    <p class="text-secondary" data-aos="fade-in" data-aos-duration="1000">
+                        Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir
+                        untuk
+                        memberikan doa restu kepada kedua mempelai.
+                    </p>
+                    <h1 class="m-5 sofia-regular text-brown" data-aos="zoom-in" data-aos-duration="1200"
+                        data-aos-delay="200">
+                        Hormat Kami yang Mengundang
+                    </h1>
+                    <p class="text-secondary" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id soluta ipsam nobis iusto nam
+                        perferendis,
+                        saepe minus? Sapiente expedita debitis provident corporis quae in perferendis quo.
+                    </p>
                 </div>
-            </form>
-            <h2 class="text-center mt-3">Ucapan dan Doa</h2>
-            <div class="px-5 py-3 mb-5 overflow-auto">
-                <div class="w-100 bg-white p-3 rounded mb-2">
-                    <div class="d-flex justify-content-between">
-                        <h6>Nama</h6>
-                        <h6>Hadir</h6>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, quae necessitatibus.</p>
-                </div>
-                <div class="w-100 bg-white p-3 rounded mb-2">
-                    <div class="d-flex justify-content-between">
-                        <h6>Nama</h6>
-                        <h6>Hadir</h6>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, quae necessitatibus.</p>
-                </div>
-                <div class="w-100 bg-white p-3 rounded mb-2">
-                    <div class="d-flex justify-content-between">
-                        <h6>Nama</h6>
-                        <h6>Hadir</h6>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, quae necessitatibus.</p>
-                </div>
-            </div>
-        </section>
-        <!-- thanks  -->
-        <section id="thanks" class="d-flex justify-content-center flex-column align-items-center text-center vh-100 p-5">
-            <div>
-                <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk
-                    memberikan doa restu kepada kedua mempelai.</p>
-                <h1 class="m-5">Hormat Kami yang Mengundang</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id soluta ipsam nobis iusto
-                    nam perferendis, saepe minus? Sapiente expedita debitis provident corporis quae in perferendis quo
-                </p>
-            </div>
-        </section>
+            </section>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,66 @@
+.custom-container {
+    width: 500px;
+    margin: auto;
+    background-image: url(assets/images/background.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: 500px 100vh;
+}
+
+.custom-position {
+    /* dihitung dari posisi paling tengah dikurangi dengan hampir setengah dari width container (500px) */
+    right: calc(50% - 240px); 
+    /* dihitung dari posisi tengah dikurangi dengan setengah total height dari semua element li (20px * 6) ditambahkan dengan total margin atas bawah di setiap element li (12px * 2 * 6). Totalnya 264px / 2 = 132px */
+    top: calc(50% - 132px);
+    /* agar selalu berada di atas elemen lain */
+    z-index: 100; 
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.202);
+    margin: 12px 0;
+}
+
+.circle.active {
+    background-color: rgba(0, 0, 0, 0.706);
+}
+
+.btn {
+    padding: 15px 20px;
+}
+
+.mute-bottom {
+    bottom: 5px;
+    left: calc(50% - 245px);
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+#countdown p {
+    background-color: rgba(255, 255, 255, 0.536);
+}
+
+.amp-custom-position {
+    top: calc(50% - 25px);
+}
+
+.text-brown {
+    color: rgb(165, 93, 42);
+}
+
+@media (max-width: 499px) {
+    .custom-container {
+        width: 100%;
+    }
+
+    .custom-position {
+        right: 10px; 
+    }
+
+    .mute-bottom {
+        left: 5px;
+    }
+}
